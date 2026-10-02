@@ -9,7 +9,11 @@
 <body>
   <main class="painel">
     <h1>🍹 Máquina de Suco</h1>
-    <p>Escolha o sabor desejado</p>
+    <p>Controle das bombas</p>
+
+    <button id="conectar" onclick="conectarArduino()">
+      Conectar Arduino por USB
+    </button>
 
     <button onclick="prepararSuco(1, 'Morango')">
       🍓 Morango
@@ -23,7 +27,7 @@
       🍇 Uva
     </button>
 
-    <p id="status">Máquina aguardando seleção</p>
+    <p id="status">Conecte o Arduino para começar.</p>
   </main>
 
   <script src="script.js"></script>
